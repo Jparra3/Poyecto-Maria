@@ -102,6 +102,7 @@ public class Acceso extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 0, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 0, 0));
         jLabel3.setText("Ingrese Datos");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
