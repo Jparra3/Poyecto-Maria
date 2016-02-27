@@ -52,7 +52,7 @@ public class pantalla extends javax.swing.JFrame {
         });
 
         lbUsuario.setBackground(new java.awt.Color(0, 0, 0));
-        lbUsuario.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
+        lbUsuario.setFont(new java.awt.Font("Baskerville Old Face", 2, 12)); // NOI18N
         lbUsuario.setForeground(new java.awt.Color(255, 255, 255));
         lbUsuario.setText("UAcceso");
         lbUsuario.addHierarchyListener(new java.awt.event.HierarchyListener() {
@@ -68,7 +68,7 @@ public class pantalla extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ContenedorLayout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(lbUsuario)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 506, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 513, Short.MAX_VALUE)
                 .addComponent(lbFecha)
                 .addContainerGap())
         );

@@ -47,7 +47,7 @@ public class OpcEliminar extends javax.swing.JInternalFrame {
 
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        btnAceptar.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
+        btnAceptar.setFont(new java.awt.Font("Baskerville Old Face", 2, 18)); // NOI18N
         btnAceptar.setText("Aceptar");
         btnAceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -55,7 +55,7 @@ public class OpcEliminar extends javax.swing.JInternalFrame {
             }
         });
 
-        btnCancelar.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
+        btnCancelar.setFont(new java.awt.Font("Baskerville Old Face", 2, 18)); // NOI18N
         btnCancelar.setText("Cancelar");
         btnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,6 +64,7 @@ public class OpcEliminar extends javax.swing.JInternalFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 0, 0));
         jLabel1.setText("¿Esta Usted Seguro de Eliminarlo?");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
