@@ -157,7 +157,7 @@ public class Acceso extends javax.swing.JFrame {
         cont=txtContra.getText();
         boolean r=false;
         try {
-            Conexion =(Connection) obj.getConnection("java","root","9013113479");
+            Conexion =(Connection) obj.getConnection("gimnasio","root","");
             Consulta=Conexion.prepareStatement("SELECT Nombre,Apellido,Contraseña FROM acceso WHERE Nombre=\""+nom+"\""
                     + " AND Contraseña=\""+cont+"\";");
             Datos=Consulta.executeQuery();

@@ -46,7 +46,7 @@ public class Asistencia extends javax.swing.JInternalFrame {
     }
     public void conectar()
      {
-         Conexion =(Connection) obj.getConnection("java","root","9013113479");
+         Conexion =(Connection) obj.getConnection("gimnasio","root","");
      }
      public void desconectar()
      {
@@ -262,7 +262,7 @@ public class Asistencia extends javax.swing.JInternalFrame {
         nom=txtNombre.getText().toUpperCase();
         try {
             conectar();
-            Consulta=Conexion.prepareStatement("SELECT * FROM java.usuarios WHERE Nombre LIKE \""+nom+"%\"");
+            Consulta=Conexion.prepareStatement("SELECT * FROM usuarios WHERE Nombre LIKE \""+nom+"%\"");
             Datos=Consulta.executeQuery();
             while(Datos.next())
             {
@@ -312,7 +312,7 @@ public class Asistencia extends javax.swing.JInternalFrame {
             try 
             {
                 conectar();
-                Consulta=Conexion.prepareStatement("SELECT * FROM java.mensualidad WHERE Usu_men_id ="+id);
+                Consulta=Conexion.prepareStatement("SELECT * FROM mensualidad WHERE Usu_men_id ="+id);
                 Datos=Consulta.executeQuery();
                 while(Datos.next())
                 {

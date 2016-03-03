@@ -166,8 +166,8 @@ public class Consultar_Usuario extends javax.swing.JInternalFrame {
         String nom=txtBusNom.getText();
         i=0;
         try {
-            Conexion =(Connection) obj.getConnection("java","root","9013113479");
-            consulta=Conexion.prepareStatement("SELECT * FROM java.usuarios WHERE Nombre LIKE \""+nom+"%\"");
+            Conexion =(Connection) obj.getConnection("gimnasio","root","");
+            consulta=Conexion.prepareStatement("SELECT * FROM usuarios WHERE Nombre LIKE \""+nom+"%\"");
             datos=consulta.executeQuery();
             while(datos.next())
             {

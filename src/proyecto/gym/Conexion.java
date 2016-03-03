@@ -44,7 +44,7 @@ public class Conexion {
     public String select(String dato,String campo)
     {
          try {
-            Conexion=(Connection) this.getConnection("java","root","9013113479");
+            Conexion=(Connection) this.getConnection("gimnasio","root","");
             consulta=Conexion.prepareStatement("SELECT "+dato+" "+campo);
             datos=consulta.executeQuery();
             while(datos.next())
@@ -61,7 +61,7 @@ public class Conexion {
     {
         boolean resp=true;
         try {
-            Conexion=(Connection) this.getConnection("java","root","9013113479");
+            Conexion=(Connection) this.getConnection("gimnasio","root","");
             String Query="INSERT INTO asistencia VALUES(\""+id+"\",\""+fech+"\",\""+pago+"\")";
             Statement st= Conexion.createStatement();
             st.executeUpdate(Query);
@@ -82,7 +82,7 @@ public class Conexion {
     public void addMensualidad(String Id,int dias,int cont,String FechIn)
     {
         try {
-            Conexion=(Connection) this.getConnection("java","root","9013113479");
+            Conexion=(Connection) this.getConnection("gimnasio","root","");
             String Query="INSERT INTO mensualidad VALUES(\""+Id+"\","+dias+","+cont+",\""+FechIn+"\")";
             Statement st= Conexion.createStatement();
             st.executeUpdate(Query);
@@ -100,7 +100,7 @@ public class Conexion {
     public void agregar(String nom,String ape,String Id,String edad,String sexo,Integer peso,String fech)
     {
         try {
-            Conexion=(Connection) this.getConnection("java","root","9013113479");
+            Conexion=(Connection) this.getConnection("gimnasio","root","");
             String Query="INSERT INTO usuarios VALUES(\""+Id+"\",\""+nom+"\",\""+ape+"\",\""+edad
                     +"\",\""+sexo+"\","+peso+",\""+fech+"\")";
             Statement st= Conexion.createStatement();
@@ -119,7 +119,7 @@ public class Conexion {
         String res[]=new String[6];       
         
         try {
-            Conexion=(Connection) this.getConnection("java","root","9013113479");
+            Conexion=(Connection) this.getConnection("gimnasio","root","");
             consulta=Conexion.prepareStatement("SELECT * FROM java.usuarios");
             datos=consulta.executeQuery();
             while(datos.next())

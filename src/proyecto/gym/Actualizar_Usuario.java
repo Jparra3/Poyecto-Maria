@@ -298,7 +298,7 @@ public class Actualizar_Usuario extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-     public void ValidarNumeros(java.awt.event.KeyEvent evt)//validacion solo numeros
+     public void validarNumeros(java.awt.event.KeyEvent evt)//validacion solo numeros
     {
         String le= String.valueOf(evt.getKeyChar());
 
@@ -310,7 +310,7 @@ public class Actualizar_Usuario extends javax.swing.JInternalFrame {
     }
      public void conectar()
      {
-         Conexion =(Connection) obj.getConnection("java","root","9013113479");
+         Conexion =(Connection) obj.getConnection("gimnasio","root","");
      }
      public void desconectar()
      {
@@ -396,7 +396,7 @@ public class Actualizar_Usuario extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_txtSexoKeyTyped
 
     private void txtPesoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPesoKeyTyped
-         ValidarNumeros(evt);
+         validarNumeros(evt);
         if(txtPeso.getText().length()>=3)
         {
             evt.consume();//Le decimos que no los muestre
@@ -405,7 +405,7 @@ public class Actualizar_Usuario extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_txtPesoKeyTyped
 
     private void txtEdadKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtEdadKeyTyped
-        ValidarNumeros(evt);
+        validarNumeros(evt);
         if(txtEdad.getText().length()>=3)
         {
             evt.consume();//Le decimos que no los muestre
@@ -421,7 +421,7 @@ public class Actualizar_Usuario extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_txtNombreKeyTyped
 
     private void txtIdBuscarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtIdBuscarKeyTyped
-        ValidarNumeros(evt);
+        validarNumeros(evt);
     }//GEN-LAST:event_txtIdBuscarKeyTyped
 
     private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
@@ -470,7 +470,7 @@ public class Actualizar_Usuario extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void txtAIdKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAIdKeyTyped
-        ValidarNumeros(evt);
+        validarNumeros(evt);
     }//GEN-LAST:event_txtAIdKeyTyped
 
     private void txtIdBuscarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtIdBuscarKeyPressed
